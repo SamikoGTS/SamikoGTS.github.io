@@ -1,4 +1,4 @@
-# Blog Title :link: https://SamikoGTS.github.io/Felix-blog.github.io 
+# Blog Title :link: https://SamikoGTS.github.io
 ### :page_facing_up: [1](https://SamikoGTS.github.io/tag.html) 
 ### :speech_balloon: 0 
 ### :hibiscus: 32 
