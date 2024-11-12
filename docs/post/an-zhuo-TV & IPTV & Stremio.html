@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/65265788?v=4"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="## Android TV安装第三方应用
+- U盘
+- ADB调试
+1. 开启开发者模式和ADB调试
+2. 连接电视盒子
+```
+adb connect [电视盒子的IP地址]:[端口号]
+```
+3. 常用ADB命令
+```
+adb install [apk文件路径]  //安装应用
+adb uninstall [应用包名]  //卸载应用 
+adb shell  //进入系统目录
+adb shell am start -n [包名]/[包名.类名]  //启动指定Activity
+adb logcat  //查看日志
+```
+- 开心电视助手: [点击下载](https://mega.nz/file/jmRA0IDL#htpLPQidk9fVO8EqZFDpg8vC6zEtEPRoyFQCNxbLXP0)    
+开心电视助手主要功能：
+1. 图形化操作，小白也能轻松管理智能电视、电视盒子、投影仪等安卓设备；
+
+2. 便捷安装第三方APK，远程截图，虚拟遥控器，一键去广告，优化系统，更加稳定流畅，支持刷第三方ROM固件；
+
+3. 支持自定义加载bat批处理、py脚本等插件,比如免拆批量刷盒子，一键备份机顶盒系统固件;支持远程投屏、虚拟遥控、删除内置软件等功能。">
+<meta property="og:title" content="安卓TV & IPTV & Stremio">
+<meta property="og:description" content="## Android TV安装第三方应用
+- U盘
+- ADB调试
+1. 开启开发者模式和ADB调试
+2. 连接电视盒子
+```
+adb connect [电视盒子的IP地址]:[端口号]
+```
+3. 常用ADB命令
+```
+adb install [apk文件路径]  //安装应用
+adb uninstall [应用包名]  //卸载应用 
+adb shell  //进入系统目录
+adb shell am start -n [包名]/[包名.类名]  //启动指定Activity
+adb logcat  //查看日志
+```
+- 开心电视助手: [点击下载](https://mega.nz/file/jmRA0IDL#htpLPQidk9fVO8EqZFDpg8vC6zEtEPRoyFQCNxbLXP0)    
+开心电视助手主要功能：
+1. 图形化操作，小白也能轻松管理智能电视、电视盒子、投影仪等安卓设备；
+
+2. 便捷安装第三方APK，远程截图，虚拟遥控器，一键去广告，优化系统，更加稳定流畅，支持刷第三方ROM固件；
+
+3. 支持自定义加载bat批处理、py脚本等插件,比如免拆批量刷盒子，一键备份机顶盒系统固件;支持远程投屏、虚拟遥控、删除内置软件等功能。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://SamikoGTS.github.io/post/an-zhuo-TV%20%26%20IPTV%20%26%20Stremio.html">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/65265788?v=4">
+<title>安卓TV & IPTV & Stremio</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">安卓TV & IPTV & Stremio</h1>
+<div class="title-right">
+    <a href="https://SamikoGTS.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/SamikoGTS/SamikoGTS.github.io/issues/2" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><h2>Android TV安装第三方应用</h2>
+<ul>
+<li>U盘</li>
+<li>ADB调试</li>
+</ul>
+<ol>
+<li>开启开发者模式和ADB调试</li>
+<li>连接电视盒子</li>
+</ol>
+<pre class="notranslate"><code class="notranslate">adb connect [电视盒子的IP地址]:[端口号]
+</code></pre>
+<ol start="3">
+<li>常用ADB命令</li>
+</ol>
+<pre class="notranslate"><code class="notranslate">adb install [apk文件路径]  //安装应用
+adb uninstall [应用包名]  //卸载应用 
+adb shell  //进入系统目录
+adb shell am start -n [包名]/[包名.类名]  //启动指定Activity
+adb logcat  //查看日志
+</code></pre>
+<ul>
+<li>开心电视助手: <a href="https://mega.nz/file/jmRA0IDL#htpLPQidk9fVO8EqZFDpg8vC6zEtEPRoyFQCNxbLXP0" rel="nofollow">点击下载</a><br>
+开心电视助手主要功能：</li>
+</ul>
+<ol>
+<li>
+<p>图形化操作，小白也能轻松管理智能电视、电视盒子、投影仪等安卓设备；</p>
+</li>
+<li>
+<p>便捷安装第三方APK，远程截图，虚拟遥控器，一键去广告，优化系统，更加稳定流畅，支持刷第三方ROM固件；</p>
+</li>
+<li>
+<p>支持自定义加载bat批处理、py脚本等插件,比如免拆批量刷盒子，一键备份机顶盒系统固件;支持远程投屏、虚拟遥控、删除内置软件等功能。</p>
+</li>
+</ol>
+<ul>
+<li>mytv-android# 安卓TV电视直播软件：<a href="https://github.com/yaoxieyoulei/mytv-android">点击前往</a><br>
+mytv-android主要功能：</li>
+</ul>
+<h3>操作方式</h3>
+<blockquote>
+<p>遥控器操作方式与主流电视直播软件类似；</p>
+</blockquote>
+<ul>
+<li>频道切换：使用上下方向键，或者数字键切换频道；屏幕上下滑动；</li>
+<li>频道选择：OK键；单击屏幕；</li>
+<li>设置页面：按下菜单、帮助键，长按OK键；双击、长按屏幕</li>
+</ul>
+<h3>触摸键位对应</h3>
+<ul>
+<li>方向键：屏幕上下左右滑动</li>
+<li>OK键：点击屏幕</li>
+<li>长按OK键：长按屏幕</li>
+<li>菜单、帮助键：双击屏幕</li>
+</ul>
+<h3>自定义设置</h3>
+<ul>
+<li>访问以下网址：<code class="notranslate">http://&lt;设备IP&gt;:10481</code></li>
+<li>打开应用设置界面，移到最后一项</li>
+<li>支持自定义直播源、自定义节目单、缓存时间等等</li>
+<li>须知：网页中引用了<code class="notranslate">jsdelivr</code>的cdn，请确保能够正常访问</li>
+</ul>
+<h3>自定义直播源</h3>
+<ul>
+<li>设置入口：自定义设置网址</li>
+<li>格式支持：m3u格式、tvbox格式</li>
+</ul>
+<h2>IPTV直播源</h2>
+<ul>
+<li>IPTV项目: <a href="https://github.com/iptv-org/iptv">点击前往</a></li>
+<li>范明明直播源 Github项目: <a href="https://github.com/fanmingming/live">点击前往</a></li>
+<li>IPTV-Checker: <a href="https://mega.nz/file/37JBjRqb#HhmPQeiNg5lZv1tfHTNOzDfh2CMuEg-75_CNsq-DkTY" rel="nofollow">点击下载</a></li>
+<li>IPv6是否开启 : <a href="https://github.com/fanmingming/live">点击检测</a></li>
+<li>自定义节目单</li>
+</ul>
+<pre class="notranslate"><code class="notranslate">http://epg.51zmt.top:8000/e.xml.gz
+</code></pre>
+<h2>Stremio</h2>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/697c2ca0a36c1a9d7a9ac5b61e44353ff3232acf90c2cd5507480914178c95d3/68747470733a2f2f7777772e737472656d696f2e636f6d2f776562736974652f6465736b746f702d6170702d6d6f636b75704032782e706e67"><img src="https://camo.githubusercontent.com/697c2ca0a36c1a9d7a9ac5b61e44353ff3232acf90c2cd5507480914178c95d3/68747470733a2f2f7777772e737472656d696f2e636f6d2f776562736974652f6465736b746f702d6170702d6d6f636b75704032782e706e67" width="600" data-canonical-src="https://www.stremio.com/website/desktop-app-mockup@2x.png" style="max-width: 100%;"></a></p>
+<p>Stremio 提供安全、现代和无缝的娱乐体验。 Stremio 界面简单易用，内容丰富多样，支持 4K HDR，用户可以在所有设备上欣赏自己喜爱的电影和电视节目。 Stremio 还致力于安全，是用户获得无忧、高质量流媒体体验的不二之选。搭配插件使用(来源bt协议)：<a href="https://stremio-addons.netlify.app/" rel="nofollow">点击前往</a></p>
+<ul>
+<li><a href="https://stremio-addons.netlify.app/torrentio" rel="nofollow">Torrentio v0.0.14</a></li>
+<li><a href="https://stremio-addons.netlify.app/cyberflix-catalog" rel="nofollow">cyberflix-catalog</a></li>
+<li><a href="https://stremio-addons.netlify.app/thepiratebay" rel="nofollow">thepiratebay</a></li>
+</ul>
+<h3>BitTorrent (协议)</h3>
+<p>该技术由美国的程序员<a href="https://zh.wikipedia.org/wiki/%E5%B8%83%E8%8E%B1%E5%A7%86%C2%B7%E7%A7%91%E4%BA%A8" title="布莱姆·科亨" rel="nofollow">布莱姆·科亨</a>于2001年4月时发布，并于2001年7月2日时首次正式应用。BitTorrent协议（简称BT，俗称比特洪流、BT下载）是用在对等网络中文件分享的网络协议程序。和点对点（point-to-point）的协议程序不同，它是用户群对用户群（peer-to-peer），而且用户越多，下载同一文件的人越多，下载该档案的速度越快。且下载后，继续维持上传的状态，就可以“分享”，成为其用户端节点下载的种子文件（.torrent），同时上传及下载。<br>
+1.基本原理<br>
+BitTorrent（简称BT）通过将大文件分割成多个小块来实现文件传输。每个下载者在下载文件的同时，也会将已下载的部分上传给其他下载者。这种方式不仅减轻了服务器的负担，还能加快下载速度。<br>
+2.种子文件<br>
+BT下载需要一个种子文件（.torrent），该文件包含了下载文件的元数据和Tracker服务器的信息。Tracker服务器负责协调和管理下载者之间的连接。<br>
+3.下载过程<br>
+获取种子文件：用户首先需要下载种子文件。<br>
+连接Tracker：BT客户端读取种子文件中的Tracker地址，并向Tracker服务器发送请求。<br>
+获取节点信息：Tracker服务器返回正在下载该文件的其他用户的IP地址。<br>
+数据交换：BT客户端与其他用户建立连接，交换各自已下载的文件块。<br>
+4.DHT技术<br>
+为了应对Tracker服务器故障，BT引入了DHT（分布式哈希表）技术。即使Tracker不可用，DHT网络也能帮助找到其他下载节点。<br>
+5.优点<br>
+高效利用带宽：下载的人越多，速度越快。<br>
+分散服务器压力：减轻了单一服务器的负担。<br>
+抗封锁能力强：通过加密协议和DHT技术，BT能有效应对网络封锁。<br>
+6.常见应用<br>
+BT技术广泛应用于大文件的分发，如软件、视频和游戏等。许多知名的BT客户端软件如uTorrent、BitTorrent和qBittorrent等都基于这一技术。</p></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://SamikoGTS.github.io">秋名山吃豆腐のblog</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","SamikoGTS/SamikoGTS.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+
+
+</html>

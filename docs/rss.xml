@@ -1,2 +1,24 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>秋名山吃豆腐のblog</title><link>https://SamikoGTS.github.io</link><description>欢迎来到我的blog，分享好玩软件DIY的科技类博主</description><copyright>秋名山吃豆腐のblog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/65265788?v=4</url><title>avatar</title><link>https://SamikoGTS.github.io</link></image><lastBuildDate>Tue, 12 Nov 2024 07:39:33 +0000</lastBuildDate><managingEditor>秋名山吃豆腐のblog</managingEditor><ttl>60</ttl><webMaster>秋名山吃豆腐のblog</webMaster><item><title>Hello Word</title><link>https://SamikoGTS.github.io/post/Hello%20Word.html</link><description>hello word ,this is a test page.。</description><guid isPermaLink="true">https://SamikoGTS.github.io/post/Hello%20Word.html</guid><pubDate>Tue, 12 Nov 2024 07:26:32 +0000</pubDate></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>秋名山吃豆腐のblog</title><link>https://SamikoGTS.github.io</link><description>欢迎来到我的blog，分享好玩软件DIY的科技类博主</description><copyright>秋名山吃豆腐のblog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/65265788?v=4</url><title>avatar</title><link>https://SamikoGTS.github.io</link></image><lastBuildDate>Tue, 12 Nov 2024 08:20:41 +0000</lastBuildDate><managingEditor>秋名山吃豆腐のblog</managingEditor><ttl>60</ttl><webMaster>秋名山吃豆腐のblog</webMaster><item><title>安卓TV &amp; IPTV &amp; Stremio</title><link>https://SamikoGTS.github.io/post/an-zhuo-TV%20%26%20IPTV%20%26%20Stremio.html</link><description>## Android TV安装第三方应用&#13;
+- U盘&#13;
+- ADB调试&#13;
+1. 开启开发者模式和ADB调试&#13;
+2. 连接电视盒子&#13;
+```&#13;
+adb connect [电视盒子的IP地址]:[端口号]&#13;
+```&#13;
+3. 常用ADB命令&#13;
+```&#13;
+adb install [apk文件路径]  //安装应用&#13;
+adb uninstall [应用包名]  //卸载应用 &#13;
+adb shell  //进入系统目录&#13;
+adb shell am start -n [包名]/[包名.类名]  //启动指定Activity&#13;
+adb logcat  //查看日志&#13;
+```&#13;
+- 开心电视助手: [点击下载](https://mega.nz/file/jmRA0IDL#htpLPQidk9fVO8EqZFDpg8vC6zEtEPRoyFQCNxbLXP0)    &#13;
+开心电视助手主要功能：&#13;
+1. 图形化操作，小白也能轻松管理智能电视、电视盒子、投影仪等安卓设备；&#13;
+&#13;
+2. 便捷安装第三方APK，远程截图，虚拟遥控器，一键去广告，优化系统，更加稳定流畅，支持刷第三方ROM固件；&#13;
+&#13;
+3. 支持自定义加载bat批处理、py脚本等插件,比如免拆批量刷盒子，一键备份机顶盒系统固件;支持远程投屏、虚拟遥控、删除内置软件等功能。</description><guid isPermaLink="true">https://SamikoGTS.github.io/post/an-zhuo-TV%20%26%20IPTV%20%26%20Stremio.html</guid><pubDate>Tue, 12 Nov 2024 08:20:08 +0000</pubDate></item><item><title>Hello Word</title><link>https://SamikoGTS.github.io/post/Hello%20Word.html</link><description>hello word ,this is a test page.。</description><guid isPermaLink="true">https://SamikoGTS.github.io/post/Hello%20Word.html</guid><pubDate>Tue, 12 Nov 2024 07:26:32 +0000</pubDate></item></channel></rss>
