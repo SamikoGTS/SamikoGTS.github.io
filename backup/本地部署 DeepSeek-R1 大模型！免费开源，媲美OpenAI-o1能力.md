@@ -4,9 +4,13 @@
 
 各项性能指标更是和OpenAI-o1 模型不相上下，甚至做到了小部分的超越，关键是开源的，我们可以本地部署使用
 
+![](https://www.freedidi.com/wp-content/uploads/2025/01/d41da917e620250125141204-scaled.webp)
+
 **1、本地部署，我们可以通过Ollama来进行安装**
 Ollama 官方版：【[点击前往](https://ollama.com/)】
 Web UI 控制端【[点击安装](https://chromewebstore.google.com/detail/page-assist-%E6%9C%AC%E5%9C%B0-ai-%E6%A8%A1%E5%9E%8B%E7%9A%84-web/jfgfiigpkhlkbnfnbobbkinehhfdhndo)】
+
+![](https://github.com/Felix-zf/Picture-Store/blob/master/blog/deepseek.jpg?raw=true)
 
 安装命令
 
