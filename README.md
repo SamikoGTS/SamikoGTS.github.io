@@ -1,4 +1,6 @@
-# 秋名山吃豆腐のblog :link: https://SamikoGTS.github.io 
+# 秋名山吃豆腐のblog 
+
+### :link: https://SamikoGTS.github.io 
 ### :page_facing_up: [21](https://SamikoGTS.github.io/tag.html) 
 ### :speech_balloon: 0 
 ### :hibiscus: 37798 
