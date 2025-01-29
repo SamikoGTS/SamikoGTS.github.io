@@ -1,5 +1,76 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>秋名山吃豆腐のblog</title><link>https://SamikoGTS.github.io</link><description>欢迎来到我的blog，分享好玩软件DIY的科技类博主</description><copyright>秋名山吃豆腐のblog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/65265788?v=4</url><title>avatar</title><link>https://SamikoGTS.github.io</link></image><lastBuildDate>Sat, 25 Jan 2025 17:56:14 +0000</lastBuildDate><managingEditor>秋名山吃豆腐のblog</managingEditor><ttl>60</ttl><webMaster>秋名山吃豆腐のblog</webMaster><item><title>本地部署 DeepSeek-R1 大模型！免费开源，媲美OpenAI-o1能力</title><link>https://SamikoGTS.github.io/post/ben-di-bu-shu-%20DeepSeek-R1%20-da-mo-xing-%EF%BC%81-mian-fei-kai-yuan-%EF%BC%8C-pi-mei-OpenAI-o1-neng-li.html</link><description>最近，一家名叫DeepSeek的初创公司经过技术迭代与升级，发布了全新一代大模型，“DeepSeek-V3”。</description><guid isPermaLink="true">https://SamikoGTS.github.io/post/ben-di-bu-shu-%20DeepSeek-R1%20-da-mo-xing-%EF%BC%81-mian-fei-kai-yuan-%EF%BC%8C-pi-mei-OpenAI-o1-neng-li.html</guid><pubDate>Sat, 25 Jan 2025 17:55:49 +0000</pubDate></item><item><title>Kali 系统下载、安装教程 ！ 支持PC、虚拟机、手机、云主机等，安全人员和黑客必备！</title><link>https://SamikoGTS.github.io/post/Kali%20-xi-tong-xia-zai-%E3%80%81-an-zhuang-jiao-cheng-%20%EF%BC%81%20-zhi-chi-PC%E3%80%81-xu-ni-ji-%E3%80%81-shou-ji-%E3%80%81-yun-zhu-ji-deng-%EF%BC%8C-an-quan-ren-yuan-he-hei-ke-bi-bei-%EF%BC%81.html</link><description>![](https://www.freedidi.com/wp-content/uploads/2025/01/649cf3e01920250123143323.webp)
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>秋名山吃豆腐のblog</title><link>https://SamikoGTS.github.io</link><description>欢迎来到我的blog，分享好玩软件DIY的科技类博主</description><copyright>秋名山吃豆腐のblog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/65265788?v=4</url><title>avatar</title><link>https://SamikoGTS.github.io</link></image><lastBuildDate>Wed, 29 Jan 2025 10:55:29 +0000</lastBuildDate><managingEditor>秋名山吃豆腐のblog</managingEditor><ttl>60</ttl><webMaster>秋名山吃豆腐のblog</webMaster><item><title>本地部署DeepSeek 多模态大模型Janus-Pro-7B</title><link>https://SamikoGTS.github.io/post/ben-di-bu-shu-DeepSeek%20-duo-mo-tai-da-mo-xing-Janus-Pro-7B.html</link><description>DeepSeek 又深夜发大招！开源了多模态大模型Janus-Pro-7B，普通电脑可以直接安装使用，现在我们就来本地部署！支持图像识别和图像生成，性能非常强悍！
+
+![](https://www.freedidi.com/wp-content/uploads/2025/01/72bbf8adec20250129143703-748x421.webp)
+
+1、检查自己是否安装了 Git 和 conda ，如果没有安装，请点击前往下载【[Git](https://git-scm.com/)】和 【[Conda](https://www.anaconda.com/download)】
+
+2、创建虚拟环境
+```
+conda create -n myenvp python=3.10 -y
+```
+3、激活 Conda 环境
+```
+conda activate myenvp
+```
+4、克隆 Janus 项目
+```
+git clone https://github.com/deepseek-ai/Janus.git
+```
+5、进入 Janus 目录
+```
+cd Janus
+```
+6、安装 Janus 依赖
+```
+pip install -e .
+```
+7、安装 Gradio（UI）
+```
+pip install gradio
+pip uninstall torch torchvision torchaudio -y
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+```
+8、运行 Janus Pro UI
+```
+python demo/app_januspro.py
+```
+或强行调用GPU运行（速度更快）：
+```
+python demo/app_januspro.py --device cuda
+```
+安装完成以后，根据提示打开本地链接：http://127.0.0.1:7860 即可进入到使用面板
+
+![](https://www.freedidi.com/wp-content/uploads/2025/01/13b265f43520250129143934-scaled.webp)
+
+下方就是文生图功能：
+
+![](https://www.freedidi.com/wp-content/uploads/2025/01/83b940c5b220250129144614-scaled.webp)
+
+**退出以后该如何启动？ 按下方的步骤即可：**
+
+1、激活 Conda 虚拟环境
+```
+conda activate myenvp
+```
+2、进入安装目录：
+```
+cd Janus
+```
+3、运行 Janus UI：
+```
+python demo/app_januspro.py
+```
+如果需要指定 GPU：
+```
+python demo/app_januspro.py --device cuda
+```
+当然如果你的电脑硬件过低，或者显卡不支持，那么可以使用免费的在线平台进行使用
+
+【[点击前往](https://huggingface.co/spaces/deepseek-ai/Janus-1.3B)】
+
+免费的在线平台是托管在Huggingface上的，使用的是共享GPU，在线人多的时候，可能会比较卡！
+。</description><guid isPermaLink="true">https://SamikoGTS.github.io/post/ben-di-bu-shu-DeepSeek%20-duo-mo-tai-da-mo-xing-Janus-Pro-7B.html</guid><pubDate>Wed, 29 Jan 2025 10:55:05 +0000</pubDate></item><item><title>本地部署 DeepSeek-R1 大模型！免费开源，媲美OpenAI-o1能力</title><link>https://SamikoGTS.github.io/post/ben-di-bu-shu-%20DeepSeek-R1%20-da-mo-xing-%EF%BC%81-mian-fei-kai-yuan-%EF%BC%8C-pi-mei-OpenAI-o1-neng-li.html</link><description>最近，一家名叫DeepSeek的初创公司经过技术迭代与升级，发布了全新一代大模型，“DeepSeek-V3”。</description><guid isPermaLink="true">https://SamikoGTS.github.io/post/ben-di-bu-shu-%20DeepSeek-R1%20-da-mo-xing-%EF%BC%81-mian-fei-kai-yuan-%EF%BC%8C-pi-mei-OpenAI-o1-neng-li.html</guid><pubDate>Sat, 25 Jan 2025 17:55:49 +0000</pubDate></item><item><title>Kali 系统下载、安装教程 ！ 支持PC、虚拟机、手机、云主机等，安全人员和黑客必备！</title><link>https://SamikoGTS.github.io/post/Kali%20-xi-tong-xia-zai-%E3%80%81-an-zhuang-jiao-cheng-%20%EF%BC%81%20-zhi-chi-PC%E3%80%81-xu-ni-ji-%E3%80%81-shou-ji-%E3%80%81-yun-zhu-ji-deng-%EF%BC%8C-an-quan-ren-yuan-he-hei-ke-bi-bei-%EF%BC%81.html</link><description>![](https://www.freedidi.com/wp-content/uploads/2025/01/649cf3e01920250123143323.webp)
 
 1、Kail 官方下载：【[点击前往](https://www.kali.org/)】
 
