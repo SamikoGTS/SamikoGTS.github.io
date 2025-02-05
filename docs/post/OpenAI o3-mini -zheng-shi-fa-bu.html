@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/65265788?v=4"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="OpenAI o3-mini，是推理系列中最新、最具成本效益的模型，现已在 ChatGPT 和 API 中提供。">
+<meta property="og:title" content="OpenAI o3-mini 正式发布">
+<meta property="og:description" content="OpenAI o3-mini，是推理系列中最新、最具成本效益的模型，现已在 ChatGPT 和 API 中提供。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://SamikoGTS.github.io/post/OpenAI%20o3-mini%20-zheng-shi-fa-bu.html">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/65265788?v=4">
+<title>OpenAI o3-mini 正式发布</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">OpenAI o3-mini 正式发布</h1>
+<div class="title-right">
+    <a href="https://SamikoGTS.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/SamikoGTS/SamikoGTS.github.io/issues/27" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p>OpenAI o3-mini，是推理系列中最新、最具成本效益的模型，现已在 ChatGPT 和 API 中提供。这款功能强大且快速的模型于 2024 年 12 月进行了预览，它突破了小型模型所能实现的界限，提供了卓越的 STEM 功能（尤其擅长科学、数学和编码），同时保持了 OpenAI o1-mini 的低成本和低延迟。</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/013ecaf36732a5fbb225b0fc598a43168501716d071c352f17d1b59257e67c67/68747470733a2f2f7777772e66726565646964692e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3062343062306135396132303235303230333231343133352e77656270"><img src="https://camo.githubusercontent.com/013ecaf36732a5fbb225b0fc598a43168501716d071c352f17d1b59257e67c67/68747470733a2f2f7777772e66726565646964692e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3062343062306135396132303235303230333231343133352e77656270" alt="0b40b0a59a20250203214135" data-canonical-src="https://www.freedidi.com/wp-content/uploads/2025/02/0b40b0a59a20250203214135.webp" style="max-width: 100%;"></a></p>
+<p><strong>官方免费使用：【<a href="https://chatgpt.com/" rel="nofollow">链接直达</a>】</strong></p>
+<p>进入打开里面的推荐按钮即可，就可以直接开启 OpenAI o3-mini 模型深度推理功能！</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/bf921fa797d7b7b1bdebef0e48e672c9aa4806576cc9e953778d6dacfb19bb39/68747470733a2f2f7777772e66726565646964692e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3536313535373139666532303235303230333231343130342e77656270"><img src="https://camo.githubusercontent.com/bf921fa797d7b7b1bdebef0e48e672c9aa4806576cc9e953778d6dacfb19bb39/68747470733a2f2f7777772e66726565646964692e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3536313535373139666532303235303230333231343130342e77656270" alt="56155719fe20250203214104" data-canonical-src="https://www.freedidi.com/wp-content/uploads/2025/02/56155719fe20250203214104.webp" style="max-width: 100%;"></a></p>
+<h2>快速、强大且针对 STEM 推理进行了优化</h2>
+<p>与前身 OpenAI o1 类似，OpenAI o3-mini 已针对 STEM 推理进行了优化。o3-mini 的中等推理努力与 o1 在数学、编码和科学方面的表现相当，同时响应速度更快。专家测试人员的评估表明，与 OpenAI o1-mini 相比，o3-mini 的答案更准确、更清晰，推理能力更强。测试人员在 56% 的时间里更喜欢 o3-mini 的回答，并观察到在困难的现实问题上重大错误减少了 39%。在中等推理努力下，o3-mini 在一些最具挑战性的推理和智力评估（包括 AIME 和 GPQA）上的表现与 o1 相当。</p>
+<h3>竞赛数学（AIME 2024）</h3>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9c7f2b132bd8588193f6e695e2bb6b47e383d1ec2f60ab2bafe67ebd4b3d3d2f/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f385035646466306d51434e6d7374556253636579552f35336161636561643938653532323462373366643432323438376338373033302f436f6d7065746974696f6e5f4d6174682e706e673f773d3139323026713d383026666d3d77656270"><img src="https://camo.githubusercontent.com/9c7f2b132bd8588193f6e695e2bb6b47e383d1ec2f60ab2bafe67ebd4b3d3d2f/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f385035646466306d51434e6d7374556253636579552f35336161636561643938653532323462373366643432323438376338373033302f436f6d7065746974696f6e5f4d6174682e706e673f773d3139323026713d383026666d3d77656270" alt="" data-canonical-src="https://images.ctfassets.net/kftzwdyauwt9/8P5ddf0mQCNmstUbSceyU/53aacead98e5224b73fd422487c87030/Competition_Math.png?w=1920&amp;q=80&amp;fm=webp" style="max-width: 100%;"></a><br>
+<strong><em>数学</em></strong><em>：在较低的推理努力下，OpenAI o3-mini 实现了与 OpenAI o1-mini 相当的性能，而在中等努力下，o3-mini 实现了与 o1 相当的性能。同时，在较高的推理努力下，o3-mini 的表现优于 OpenAI o1-mini 和 OpenAI o1，其中灰色阴影区域显示了 64 个样本的多数投票（共识）性能。</em></p>
+<h3>博士级科学问题（GPQA Diamond）</h3>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ecab05b9f70003ba31aa63ada7f1ff391ea6fc17b97ab5e87406241d50d406c5/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f3652744d715369386e7a44325461774e7268694358722f31643765656435353164386431313865366336643231396533386635623561372f475051412e706e673f773d3139323026713d383026666d3d77656270"><img src="https://camo.githubusercontent.com/ecab05b9f70003ba31aa63ada7f1ff391ea6fc17b97ab5e87406241d50d406c5/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f3652744d715369386e7a44325461774e7268694358722f31643765656435353164386431313865366336643231396533386635623561372f475051412e706e673f773d3139323026713d383026666d3d77656270" alt="" data-canonical-src="https://images.ctfassets.net/kftzwdyauwt9/6RtMqSi8nzD2TawNrhiCXr/1d7eed551d8d118e6c6d219e38f5b5a7/GPQA.png?w=1920&amp;q=80&amp;fm=webp" style="max-width: 100%;"></a></p>
+<p><strong><em>博士级科学</em>_</strong>：在博士级生物学、化学和物理学问题上，OpenAI o3-mini 在推理工作量较少的情况下，其性能优于 OpenAI o1-mini。在付出较大努力的情况下，o3-mini 的性能可与 o1 相媲美。_</p>
+<h3>数学前沿</h3>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/42aced2282e8f61a28d1cddadc15e840a9332525d4d1920f2078b9ffa0492033/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f324b716233664d5259376837425767755139386e58682f34626639356264346133363132653137646236303361396266653130313333382f46726f6e746965725f4d6174682e706e673f773d3139323026713d383026666d3d77656270"><img src="https://camo.githubusercontent.com/42aced2282e8f61a28d1cddadc15e840a9332525d4d1920f2078b9ffa0492033/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f324b716233664d5259376837425767755139386e58682f34626639356264346133363132653137646236303361396266653130313333382f46726f6e746965725f4d6174682e706e673f773d3139323026713d383026666d3d77656270" alt="黑色网格具有多行和多列，由细白线隔开，从而创建了结构化且有组织的布局。" data-canonical-src="https://images.ctfassets.net/kftzwdyauwt9/2Kqb3fMRY7h7BWguQ98nXh/4bf95bd4a3612e17db603a9bfe101338/Frontier_Math.png?w=1920&amp;q=80&amp;fm=webp" style="max-width: 100%;"></a></p>
+<p><strong><em>研究级数学</em></strong><em>：具有高推理能力的 OpenAI o3-mini 在 FrontierMath 上的表现优于其前身。在 FrontierMath 上，当被提示使用 Python 工具时，具有高推理能力的 o3-mini 在第一次尝试时解决了超过 32% 的问题，其中包括超过 28% 的具有挑战性的 (T3) 问题。这些数字是临时的，上图显示了没有工具或计算器时的性能。</em></p>
+<h3>竞赛规则（Codeforces）</h3>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ec87fe2608363dab647fae58639b144d3d595af87deaf7e2466d90f0c029cbfd/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f3373614b354a5a384434553268534e694c65624f79632f34303932383833343333356635303631666136306237663230303835303938332f436f6d7065746974696f6e5f436f64652e706e673f773d3139323026713d383026666d3d77656270"><img src="https://camo.githubusercontent.com/ec87fe2608363dab647fae58639b144d3d595af87deaf7e2466d90f0c029cbfd/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f3373614b354a5a384434553268534e694c65624f79632f34303932383833343333356635303631666136306237663230303835303938332f436f6d7065746974696f6e5f436f64652e706e673f773d3139323026713d383026666d3d77656270" alt="条形图比较了不同 AI 模型在 Codeforces 竞赛编码任务上的 Elo 评分。较旧的模型（灰色）得分较低，而较新的模型（黄色）得分有所提高。“o3-mini（高）”的 Elo 评分达到 2073，与之前的版本相比有显著进步。" data-canonical-src="https://images.ctfassets.net/kftzwdyauwt9/3saK5JZ8D4U2hSNiLebOyc/40928834335f5061fa60b7f200850983/Competition_Code.png?w=1920&amp;q=80&amp;fm=webp" style="max-width: 100%;"></a></p>
+<p><em><strong>竞赛编程</strong>__：在 Codeforces 竞赛编程中，OpenAI o3-mini 随着推理努力的增加而获得越来越高的 Elo 分数，均优于 o1-mini。在中等推理努力下，它的表现与 o1 相当。</em></p>
+<h3>软件工程（SWE-bench 验证）</h3>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/4d2ffc620a7bf8c875b4a7929f187d4214e6f793a7fff48c36413677ac4b8e84/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f337777335565644230596474654f6549493679474b492f61653963306533373266376132393465636339336236333866633935386230372f5357452e706e673f773d3139323026713d383026666d3d77656270"><img src="https://camo.githubusercontent.com/4d2ffc620a7bf8c875b4a7929f187d4214e6f793a7fff48c36413677ac4b8e84/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f337777335565644230596474654f6549493679474b492f61653963306533373266376132393465636339336236333866633935386230372f5357452e706e673f773d3139323026713d383026666d3d77656270" alt="条形图比较了各个 AI 模型在 SWE-bench Verified 软件工程任务上的准确率。较旧的模型（灰色）表现较差，而“o3-mini（高）”（黄色）的准确率最高，为 48.9%，与之前的版本相比有所改进。" data-canonical-src="https://images.ctfassets.net/kftzwdyauwt9/3ww3UedB0YdteOeII6yGKI/ae9c0e372f7a294ecc93b638fc958b07/SWE.png?w=1920&amp;q=80&amp;fm=webp" style="max-width: 100%;"></a></p>
+<p><strong><em>软件工程</em></strong><em>：o3-mini 是我们在 SWEbench 验证中性能最高的发布模型。有关 SWE-bench 验证结果的更多数据点，包括使用开源 Agentless 脚手架（39%）和内部工具脚手架（61%），请参阅我们的</em><a href="https://openai.com/index/o3-mini-system-card/" rel="nofollow"><em>系统卡⁠</em> ⁠</a><em>。</em></p>
+<h3>LiveBench 编码</h3>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/fd97046486321e0d9326082ccb6196cdd019205face3396d89188e64a8a68cea/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f36446541674672575047577678723930306a626f464e2f64383734393066303664326638663731376264336239376633613165386363392f4d6f64656c5f477261706869635f312e706e673f773d3139323026713d383026666d3d77656270"><img src="https://camo.githubusercontent.com/fd97046486321e0d9326082ccb6196cdd019205face3396d89188e64a8a68cea/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f36446541674672575047577678723930306a626f464e2f64383734393066303664326638663731376264336239376633613165386363392f4d6f64656c5f477261706869635f312e706e673f773d3139323026713d383026666d3d77656270" alt="该表比较了人工智能模型在编码任务上的表现，显示了性能指标和评估分数。它突出了准确度和效率方面的差异，一些模型在特定基准上的表现优于其他模型。" data-canonical-src="https://images.ctfassets.net/kftzwdyauwt9/6DeAgFrWPGWvxr900jboFN/d87490f06d2f8f717bd3b97f3a1e8cc9/Model_Graphic_1.png?w=1920&amp;q=80&amp;fm=webp" style="max-width: 100%;"></a></p>
+<p><em><strong>LiveBench 编码</strong>__：OpenAI o3-mini 即使在中等推理工作量下也超越了 o1-high，凸显了其在编码任务中的效率。在高推理工作量下，o3-mini 进一步扩大领先优势，在关键指标上实现了显著增强的性能。</em></p>
+<h3>常识</h3>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/dfff4da4228dc67ba4dfdd91b42275a968d573279af4314910506a94671ad474/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f374d3962676e504d366156506456476a7a79765079532f63633832646662393565376431393033353261653137386435383431656636382f43617465676f72795f4576616c732e706e673f773d3139323026713d383026666d3d77656270"><img src="https://camo.githubusercontent.com/dfff4da4228dc67ba4dfdd91b42275a968d573279af4314910506a94671ad474/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f374d3962676e504d366156506456476a7a79765079532f63633832646662393565376431393033353261653137386435383431656636382f43617465676f72795f4576616c732e706e673f773d3139323026713d383026666d3d77656270" alt="名为“类别评估”的表格比较了不同评估类别的 AI 模型，并显示了性能指标。它突出了准确性、效率和有效性方面的差异，一些模型在特定任务上的表现优于其他模型。" data-canonical-src="https://images.ctfassets.net/kftzwdyauwt9/7M9bgnPM6aVPdVGjzyvPyS/cc82dfb95e7d190352ae178d5841ef68/Category_Evals.png?w=1920&amp;q=80&amp;fm=webp" style="max-width: 100%;"></a></p>
+<p><em><strong>常识</strong>__：o3-mini 在常识领域的知识评估中表现优于 o1-mini。</em></p>
+<h3>人类偏好评估</h3>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/cefb974722561bc0180f690487a26821b28802ded2ce6fa894a9b057e593f1a3/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f327374456d75706b374a71585a4e30324d64314537762f39623937313263653337356230633666373566396262326339376131656639642f48756d616e5f4576616c735f312e706e673f773d3139323026713d383026666d3d77656270"><img src="https://camo.githubusercontent.com/cefb974722561bc0180f690487a26821b28802ded2ce6fa894a9b057e593f1a3/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f327374456d75706b374a71585a4e30324d64314537762f39623937313263653337356230633666373566396262326339376131656639642f48756d616e5f4576616c735f312e706e673f773d3139323026713d383026666d3d77656270" alt="该图表比较了各个 AI 模型中 STEM 和非 STEM 任务的胜率。“o3_mini_v43_s960_j128”（黄色）在两个类别中的表现均优于“o1_mini_chatgpt”（红色基线），且 STEM 任务的胜率更高。" data-canonical-src="https://images.ctfassets.net/kftzwdyauwt9/2stEmupk7JqXZN02Md1E7v/9b9712ce375b0c6f75f9bb2c97a1ef9d/Human_Evals_1.png?w=1920&amp;q=80&amp;fm=webp" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/cc7553cb25219b56f97205c787909af7437c04e3543f2e14ff284a41e51e7b69/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f366255324f37526b71574e63424d6a31324b667278302f62653238366661396633393339336265303833383635366162386331646136302f48756d616e5f4576616c735f322e706e673f773d3139323026713d383026666d3d77656270"><img src="https://camo.githubusercontent.com/cc7553cb25219b56f97205c787909af7437c04e3543f2e14ff284a41e51e7b69/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f366255324f37526b71574e63424d6a31324b667278302f62653238366661396633393339336265303833383635366162386331646136302f48756d616e5f4576616c735f322e706e673f773d3139323026713d383026666d3d77656270" alt="该图表比较了时间约束下的胜率和各个 AI 模型的重大错误率。“o3_mini_v43_s960_j128”（黄色）的胜率优于“o1_mini_chatgpt”（红色基线），并且显著减少了重大错误。" data-canonical-src="https://images.ctfassets.net/kftzwdyauwt9/6bU2O7RkqWNcBMj12Kfrx0/be286fa9f39393be0838656ab8c1da60/Human_Evals_2.png?w=1920&amp;q=80&amp;fm=webp" style="max-width: 100%;"></a></p>
+<p><strong><em>人类偏好评估</em></strong><em>：外部专家测试人员的评估还表明，OpenAI o3-mini 的答案更准确、更清晰，推理能力比 OpenAI o1-mini 更强，尤其是在 STEM 方面。测试人员在 56% 的时间里更喜欢 o3-mini 的回答，而不是 o1-mini，并且观察到在困难的现实问题上重大错误减少了 39%。</em></p>
+<h2>模型速度和性能</h2>
+<p>OpenAI o3-mini 的智能可与 OpenAI o1 媲美，但性能更快、效率更高。除了上述 STEM 评估之外，o3-mini 还在中等推理工作量的额外数学和事实性评估中表现出色。在 A/B 测试中，o3-mini 的响应速度比 o1-mini 快 24%，平均响应时间为 7.7 秒，而 o1-mini 为 10.16 秒。</p>
+<h3>o1-mini 与 o3-mini 之间的延迟比较（中等）</h3>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9b97dbdfc3e66fe277146065596f444817e6c100ff871de2f8e43ad8def7ca86/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f36734865303078314d445065576859745146485856702f66623963316636306434343564613461383065326433356430303130656165312f4c6174656e63795f636f6d70617269736f6e2e706e673f773d3139323026713d383026666d3d77656270"><img src="https://camo.githubusercontent.com/9b97dbdfc3e66fe277146065596f444817e6c100ff871de2f8e43ad8def7ca86/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f36734865303078314d445065576859745146485856702f66623963316636306434343564613461383065326433356430303130656165312f4c6174656e63795f636f6d70617269736f6e2e706e673f773d3139323026713d383026666d3d77656270" alt="条形图比较了“o1-mini”和“o3-mini（中）”型号之间的延迟。“o3-mini”（浅黄色）的延迟较低，表明响应时间更快，而“o1-mini”（深黄色）平均需要更长的时间。" data-canonical-src="https://images.ctfassets.net/kftzwdyauwt9/6sHe00x1MDPeWhYtQFHXVp/fb9c1f60d445da4a80e2d35d0010eae1/Latency_comparison.png?w=1920&amp;q=80&amp;fm=webp" style="max-width: 100%;"></a></p>
+<p><em><strong>延迟</strong>__：o3-mini 的第一个令牌平均比 o1-mini 快 2500 毫秒。</em></p>
+<h2>安全</h2>
+<p>我们用来教 OpenAI o3-mini 安全响应的关键技术之一是<a href="https://openai.com/index/deliberative-alignment/" rel="nofollow">审慎对齐</a>，即在回答用户提示之前，我们训练模型推理人类编写的安全规范。与 OpenAI o1 类似，我们发现 o3-mini 在具有挑战性的安全性和越狱评估方面明显超越了 GPT-4o。在部署之前，我们仔细评估了 o3-mini 的安全风险，采用了与 o1 相同的准备、外部红队和安全评估方法。我们感谢申请在早期访问中测试 o3-mini 的安全测试人员。以下评估的详细信息以及对潜在风险和我们缓解措施有效性的全面解释可在<a href="https://openai.com/index/o3-mini-system-card/" rel="nofollow">o3-mini 系统卡</a>中找到。</p>
+<h3>不允许的内容评估</h3>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/17faf15c8b257c3e0b2e5eb2e15cdbfbe63dafc2aa2d9ccaf98b42177e0f14a9/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f37664e78733857426c6371615667463561426f6635582f31346434623864383965633963623633663463333864643432616236306235352f5361666574795f436f6d70617269736f6e5f312e706e673f773d3139323026713d383026666d3d77656270"><img src="https://camo.githubusercontent.com/17faf15c8b257c3e0b2e5eb2e15cdbfbe63dafc2aa2d9ccaf98b42177e0f14a9/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f37664e78733857426c6371615667463561426f6635582f31346434623864383965633963623633663463333864643432616236306235352f5361666574795f436f6d70617269736f6e5f312e706e673f773d3139323026713d383026666d3d77656270" alt="该表比较了人工智能模型的安全指标，评估了不同风险类别下的表现。它突出了安全合规性方面的差异，一些模型在降低潜在风险方面表现更好。" data-canonical-src="https://images.ctfassets.net/kftzwdyauwt9/7fNxs8WBlcqaVgF5aBof5X/14d4b8d89ec9cb63f4c38dd42ab60b55/Safety_Comparison_1.png?w=1920&amp;q=80&amp;fm=webp" style="max-width: 100%;"></a></p>
+<h3>越狱评估</h3>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/7682c58d6d0705aa195e9752fefe543e767cb7aba2ec5f91a7f22b68ebc8597a/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f35577568383330545238666b6b7a4b7668566c6c64492f34383135316534363836353236626566393563333134353934343438316631662f5361666574795f436f6d70617269736f6e5f322e706e673f773d3139323026713d383026666d3d77656270"><img src="https://camo.githubusercontent.com/7682c58d6d0705aa195e9752fefe543e767cb7aba2ec5f91a7f22b68ebc8597a/68747470733a2f2f696d616765732e6374666173736574732e6e65742f6b66747a77647961757774392f35577568383330545238666b6b7a4b7668566c6c64492f34383135316534363836353236626566393563333134353934343438316631662f5361666574795f436f6d70617269736f6e5f322e706e673f773d3139323026713d383026666d3d77656270" alt="该表比较了多个风险类别的人工智能模型的安全指标，显示了其性能差异。它突出了风险缓解方面的差异，一些模型表现出更强的合规性和更安全的响应能力。" data-canonical-src="https://images.ctfassets.net/kftzwdyauwt9/5Wuh830TR8fkkzKvhVlldI/48151e4686526bef95c3145944481f1f/Safety_Comparison_2.png?w=1920&amp;q=80&amp;fm=webp" style="max-width: 100%;"></a></p>
+<h2>下一步</h2>
+<p>OpenAI o3-mini 的发布标志着 OpenAI 向突破高性价比智能界限的使命又迈进了一步。通过优化 STEM 领域的推理并保持低成本，我们让高质量的人工智能更加触手可及。该模型延续了我们降低智能成本的记录——自推出 GPT-4 以来，每个代币的价格降低了 95%——同时保持了顶级的推理能力。随着人工智能的普及，我们仍致力于走在前沿，构建能够平衡智能、效率和安全性的大规模模型。</p></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://SamikoGTS.github.io">秋名山吃豆腐のblog</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","SamikoGTS/SamikoGTS.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+
+
+</html>
