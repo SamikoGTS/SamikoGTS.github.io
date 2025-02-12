@@ -1,5 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>秋名山吃豆腐のblog</title><link>https://SamikoGTS.github.io</link><description>欢迎来到我的blog，分享好玩软件DIY的科技类博主</description><copyright>秋名山吃豆腐のblog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/65265788?v=4</url><title>avatar</title><link>https://SamikoGTS.github.io</link></image><lastBuildDate>Sun, 09 Feb 2025 11:48:12 +0000</lastBuildDate><managingEditor>秋名山吃豆腐のblog</managingEditor><ttl>60</ttl><webMaster>秋名山吃豆腐のblog</webMaster><item><title>DeepSeek-R1 满血版模型 671b 本地云端部署</title><link>https://SamikoGTS.github.io/post/DeepSeek-R1%20-man-xie-ban-mo-xing-%20671b%20-ben-di-yun-duan-bu-shu.html</link><description>DeepSeek-R1 虽然有1.5b、7b、8b、14b、32b等，但是这些都是量化版，非满血版，真正和官方一样的满血版只有一个，那就是未量化的 671b DeepSeek-R1 大模型！是目前最强最聪明的一个开源模型。</description><guid isPermaLink="true">https://SamikoGTS.github.io/post/DeepSeek-R1%20-man-xie-ban-mo-xing-%20671b%20-ben-di-yun-duan-bu-shu.html</guid><pubDate>Sun, 09 Feb 2025 11:47:46 +0000</pubDate></item><item><title>Deepseek R1 越狱版！</title><link>https://SamikoGTS.github.io/post/Deepseek%20R1%20-yue-yu-ban-%EF%BC%81.html</link><description>![](https://www.freedidi.com/wp-content/uploads/2025/02/2b4777e74220250206135552.webp)
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>秋名山吃豆腐のblog</title><link>https://SamikoGTS.github.io</link><description>欢迎来到我的blog，分享好玩软件DIY的科技类博主</description><copyright>秋名山吃豆腐のblog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/65265788?v=4</url><title>avatar</title><link>https://SamikoGTS.github.io</link></image><lastBuildDate>Wed, 12 Feb 2025 13:03:38 +0000</lastBuildDate><managingEditor>秋名山吃豆腐のblog</managingEditor><ttl>60</ttl><webMaster>秋名山吃豆腐のblog</webMaster><item><title>DeepSeek R1 和 ChatGPT 各出狠招，这场PK太炸裂！</title><link>https://SamikoGTS.github.io/post/DeepSeek%20R1%20-he-%20ChatGPT%20-ge-chu-hen-zhao-%EF%BC%8C-zhe-chang-PK-tai-zha-lie-%EF%BC%81.html</link><description>下面是ChatGPT 为 Deepseek R1 准备的第一道题目及其正确答案：
+
+**题目 1：**
+
+计算下列定积分的值，并给出简明的推导过程：
+
+![09198ba6b620250212225148](https://www.freedidi.com/wp-content/uploads/2025/02/09198ba6b620250212225148.png)
+
+---
+
+**正确答案：**
+
+![226c5b192720250212225204](https://www.freedidi.com/wp-content/uploads/2025/02/226c5b192720250212225204.png)
+
+![01bbd0462c20250212225511](https://www.freedidi.com/wp-content/uploads/2025/02/01bbd0462c20250212225511.webp)
+
+**正确答案：**
+
+![4c95b23fe120250212225600](https://www.freedidi.com/wp-content/uploads/2025/02/4c95b23fe120250212225600.png)
+
+### **题目 3：真假国王**
+
+在一个遥远的王国，有两位国王——一位是真国王，另一位是冒牌国王。</description><guid isPermaLink="true">https://SamikoGTS.github.io/post/DeepSeek%20R1%20-he-%20ChatGPT%20-ge-chu-hen-zhao-%EF%BC%8C-zhe-chang-PK-tai-zha-lie-%EF%BC%81.html</guid><pubDate>Wed, 12 Feb 2025 13:03:15 +0000</pubDate></item><item><title>DeepSeek-R1 满血版模型 671b 本地云端部署</title><link>https://SamikoGTS.github.io/post/DeepSeek-R1%20-man-xie-ban-mo-xing-%20671b%20-ben-di-yun-duan-bu-shu.html</link><description>DeepSeek-R1 虽然有1.5b、7b、8b、14b、32b等，但是这些都是量化版，非满血版，真正和官方一样的满血版只有一个，那就是未量化的 671b DeepSeek-R1 大模型！是目前最强最聪明的一个开源模型。</description><guid isPermaLink="true">https://SamikoGTS.github.io/post/DeepSeek-R1%20-man-xie-ban-mo-xing-%20671b%20-ben-di-yun-duan-bu-shu.html</guid><pubDate>Sun, 09 Feb 2025 11:47:46 +0000</pubDate></item><item><title>Deepseek R1 越狱版！</title><link>https://SamikoGTS.github.io/post/Deepseek%20R1%20-yue-yu-ban-%EF%BC%81.html</link><description>![](https://www.freedidi.com/wp-content/uploads/2025/02/2b4777e74220250206135552.webp)
 
 本地部署 deepseek 无限制版本！ 也就是DeepSeek R1的越狱版！deepseek-r1-abliterated ：无内容审查，无限制，无思想钢印，无道德….？
 
