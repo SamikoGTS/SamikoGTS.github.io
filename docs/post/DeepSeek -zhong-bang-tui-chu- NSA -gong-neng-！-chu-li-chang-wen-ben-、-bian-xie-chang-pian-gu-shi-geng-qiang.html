@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/65265788?v=4"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="就在马斯克发布Grok 3大模型后当天，DeepSeek 就重磅推出 NSA 功能！这是长文本建模的突破性进展，在处理长序列文本起到非常关键的作用，处理长文本、编写长篇故事更强！消息发布后就迎来大量的围观。">
+<meta property="og:title" content="DeepSeek 重磅推出 NSA 功能！处理长文本、编写长篇故事更强">
+<meta property="og:description" content="就在马斯克发布Grok 3大模型后当天，DeepSeek 就重磅推出 NSA 功能！这是长文本建模的突破性进展，在处理长序列文本起到非常关键的作用，处理长文本、编写长篇故事更强！消息发布后就迎来大量的围观。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://SamikoGTS.github.io/post/DeepSeek%20-zhong-bang-tui-chu-%20NSA%20-gong-neng-%EF%BC%81-chu-li-chang-wen-ben-%E3%80%81-bian-xie-chang-pian-gu-shi-geng-qiang.html">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/65265788?v=4">
+<title>DeepSeek 重磅推出 NSA 功能！处理长文本、编写长篇故事更强</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">DeepSeek 重磅推出 NSA 功能！处理长文本、编写长篇故事更强</h1>
+<div class="title-right">
+    <a href="https://SamikoGTS.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/SamikoGTS/SamikoGTS.github.io/issues/33" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p>就在马斯克发布Grok 3大模型后当天，DeepSeek 就重磅推出 NSA 功能！这是长文本建模的突破性进展，在处理长序列文本起到非常关键的作用，处理长文本、编写长篇故事更强！消息发布后就迎来大量的围观。</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/SamikoGTS/SamikoGTS-pic/blob/main/blog/1.png?raw=true"><img src="https://github.com/SamikoGTS/SamikoGTS-pic/blob/main/blog/1.png?raw=true" alt="" style="max-width: 100%;"></a></p>
+<p>近年来，语言模型被要求处理越来越长的上下文。这种需求暴露了标准注意力机制中的一些固有问题。全注意力的二次复杂度在处理长序列时很快成为瓶颈。内存使用量和计算需求迅速增加，使得多轮对话或复杂推理任务等实际应用面临挑战。此外，虽然稀疏注意力方法有望带来理论上的改进，但它们往往难以将这些好处转化为现实世界的加速。</p>
+<p>许多挑战源于理论效率与实际实施之间的脱节。在不丢失重要信息的情况下减少计算开销并非易事。这促使研究人员重新思考注意力机制，以便更好地平衡性能和效率。解决这些问题是构建可扩展且有效的模型的关键一步。</p>
+<p>DeepSeek AI 研究人员推出了 NSA，这是一种与硬件一致且可本地训练的稀疏注意力机制，用于超快速长上下文训练和推理。NSA 集成了算法创新和与硬件一致的优化，以降低处理长序列的计算成本。NSA 使用动态分层方法。它首先将标记组压缩为汇总表示。然后，它通过计算重要性分数有选择地仅保留最相关的标记。此外，滑动窗口分支可确保保留本地上下文。这种三管齐下的策略（压缩、选择和滑动窗口）创建了一种浓缩表示，同时仍可捕获全局和本地依赖关系。</p>
+<p>NSA 的设计也考虑到了硬件限制。通过实施针对现代 GPU 优化的专用内核，NSA 实现了推理和训练的延迟降低。这种算法策略和硬件协调的精心融合使 NSA 成为改进长上下文建模的有希望的候选方案。</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c07f46170156b9e89058401dff1263918bc07edf71436551c1db7d3bc96bc0b4/68747470733a2f2f7777772e66726565646964692e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3030333134382d2e77656270"><img src="https://camo.githubusercontent.com/c07f46170156b9e89058401dff1263918bc07edf71436551c1db7d3bc96bc0b4/68747470733a2f2f7777772e66726565646964692e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3030333134382d2e77656270" alt="" title="Screenshot 2025-02-18 at 7.55.03 PM" data-canonical-src="https://www.freedidi.com/wp-content/uploads/2025/02/003148-.webp" style="max-width: 100%;"></a></p>
+<h3><strong>技术细节和优势</strong></h3>
+<p>NSA 的架构基于两个主要支柱：硬件感知设计和易于训练的算法。压缩机制使用可学习的多层感知器将顺序标记聚合为块级表示。这可以捕获高级模式，同时减少对全分辨率处理的需求。</p>
+<p>压缩后，标记选择模块以块方式运行。它选择具有相似注意力分数的连续标记块，这有助于最大限度地减少随机内存访问。滑动窗口组件负责处理本地上下文。通过分离本地和全局信息，NSA 设法保留了许多任务所必需的细节。在硬件方面，NSA 优化了 GPU 资源的使用。查询以组为单位加载到 SRAM 中，并通过有效共享内存来最大限度地减少冗余键值传输。这些优化可显著提高前向和后向计算的速度。实验结果表明，对于长序列，前向传播速度提高了 9 倍，后向传播速度提高了 6 倍。</p>
+<p><strong>NSA 的核心组件：</strong></p>
+<ul>
+<li>动态分层稀疏策略</li>
+<li>粗粒度标记压缩</li>
+<li>细粒度的 token 选择</li>
+</ul>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/5d9d7b17c14a4e69342a8d6d45da69bfb7c624f24f40c6e78be9fa0ae23c976c/68747470733a2f2f7777772e66726565646964692e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3030333134392d2e77656270"><img src="https://camo.githubusercontent.com/5d9d7b17c14a4e69342a8d6d45da69bfb7c624f24f40c6e78be9fa0ae23c976c/68747470733a2f2f7777772e66726565646964692e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3030333134392d2e77656270" alt="" data-canonical-src="https://www.freedidi.com/wp-content/uploads/2025/02/003149-.webp" style="max-width: 100%;"></a></p>
+<h3><strong>结果和见解</strong></h3>
+<p>该研究对 NSA 在各种任务中的性能进行了仔细评估。在 MMLU、GSM8K 和 DROP 等基准测试中，NSA 的性能可与传统的全注意力模型相媲美，甚至更好。该设计在长上下文场景中也证明是有效的，在这些场景中，保持全局意识和局部精度至关重要。</p>
+<p>一个有趣的观察结果是，NSA 在长达 64k 个标记的序列的“大海捞针”任务中具有很高的检索准确率。这在很大程度上归功于其分层设计，该设计将粗略的全局扫描与详细的局部选择相结合。结果还表明，由于 NSA 的内存访问占用空间减少，其解码速度可以随着序列长度的增加而很好地扩展。这些见解表明，NSA 的平衡方法（结合压缩、选择和滑动窗口处理）提供了一种在不牺牲准确性的情况下有效处理长序列的实用方法。</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/98854967b471210bd8e77ae044366b93b7d9ba2948964a879d127edf089f2e30/68747470733a2f2f7777772e66726565646964692e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3030333135302d2e77656270"><img src="https://camo.githubusercontent.com/98854967b471210bd8e77ae044366b93b7d9ba2948964a879d127edf089f2e30/68747470733a2f2f7777772e66726565646964692e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3030333135302d2e77656270" alt="" title="Screenshot 2025-02-18 at 7.55.52 PM" data-canonical-src="https://www.freedidi.com/wp-content/uploads/2025/02/003150-.webp" style="max-width: 100%;"></a></p>
+<h3><strong>结论</strong></h3>
+<p>NSA 标志着稀疏注意力机制设计向前迈出了深思熟虑的一步。通过将可训练性与硬件优化相结合，NSA 解决了计算效率和有效的长上下文建模的双重挑战。它的三层方法包括标记压缩、选择性注意和滑动窗口处理，可在保留重要上下文的同时减少计算开销。</p></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://SamikoGTS.github.io">秋名山吃豆腐のblog</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","SamikoGTS/SamikoGTS.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+
+
+</html>
