@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/65265788?v=4"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="AI界从来没有“周末”这个词，连硅谷也不休息！
+
+![](https://www.freedidi.com/wp-content/uploads/2025/04/67ac9d2ab620250407181957.webp)
+
+就在这个大周日，Meta突然发布了Llama 4家族的新成员，而且一出手就是**三款模型**，直接引爆AI圈——
+
+Llama 4 Scout、Llama 4 Maverick，还有一个**还在路上的巨无霸**：Llama 4 Behemoth。">
+<meta property="og:title" content="Llama 4 最新大模型在线免费使用、下载本地部署！Llama-4-Scout 、Maverick">
+<meta property="og:description" content="AI界从来没有“周末”这个词，连硅谷也不休息！
+
+![](https://www.freedidi.com/wp-content/uploads/2025/04/67ac9d2ab620250407181957.webp)
+
+就在这个大周日，Meta突然发布了Llama 4家族的新成员，而且一出手就是**三款模型**，直接引爆AI圈——
+
+Llama 4 Scout、Llama 4 Maverick，还有一个**还在路上的巨无霸**：Llama 4 Behemoth。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://SamikoGTS.github.io/post/Llama%204%20-zui-xin-da-mo-xing-zai-xian-mian-fei-shi-yong-%E3%80%81-xia-zai-ben-di-bu-shu-%EF%BC%81Llama-4-Scout%20%E3%80%81Maverick.html">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/65265788?v=4">
+<title>Llama 4 最新大模型在线免费使用、下载本地部署！Llama-4-Scout 、Maverick</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">Llama 4 最新大模型在线免费使用、下载本地部署！Llama-4-Scout 、Maverick</h1>
+<div class="title-right">
+    <a href="https://SamikoGTS.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/SamikoGTS/SamikoGTS.github.io/issues/38" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p>AI界从来没有“周末”这个词，连硅谷也不休息！</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c3ef3e26127e8b13d87d2da797002ce27afadcf30e82a367c67377c256b3a71f/68747470733a2f2f7777772e66726565646964692e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30342f3637616339643261623632303235303430373138313935372e77656270"><img src="https://camo.githubusercontent.com/c3ef3e26127e8b13d87d2da797002ce27afadcf30e82a367c67377c256b3a71f/68747470733a2f2f7777772e66726565646964692e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30342f3637616339643261623632303235303430373138313935372e77656270" alt="" data-canonical-src="https://www.freedidi.com/wp-content/uploads/2025/04/67ac9d2ab620250407181957.webp" style="max-width: 100%;"></a></p>
+<p>就在这个大周日，Meta突然发布了Llama 4家族的新成员，而且一出手就是<strong>三款模型</strong>，直接引爆AI圈——</p>
+<p>Llama 4 Scout、Llama 4 Maverick，还有一个<strong>还在路上的巨无霸</strong>：Llama 4 Behemoth。</p>
+<p>这次发布的Llama 4，是Meta历史上<strong>首个基于MoE（混合专家）架构</strong>的模型系列，直接剑指开源最强！</p>
+<p>🔹<strong>中杯Llama 4 Scout</strong>：</p>
+<ul>
+<li>
+<p>17B激活参数，16位专家模型</p>
+</li>
+<li>
+<p>支持100万上下文窗口！</p>
+</li>
+<li>
+<p>单个H100显卡即可运行</p>
+</li>
+<li>
+<p>同类SOTA，性能超越Gemma 3和Mistral 3.1</p>
+</li>
+</ul>
+<p>🔹<strong>大杯Llama 4 Maverick</strong>：</p>
+<ul>
+<li>
+<p>同样17B参数，但拥有128位专家</p>
+</li>
+<li>
+<p>性能干掉GPT-4o和Gemini 2.0 Flash！</p>
+</li>
+<li>
+<p>代码能力等于DeepSeek-V3，参数却只有一半</p>
+</li>
+<li>
+<p>单卡可跑，性价比爆表</p>
+</li>
+</ul>
+<p>🔹<strong>超大杯Llama 4 Behemoth（预告）</strong>：</p>
+<ul>
+<li>
+<p><strong>2万亿参数</strong>，还在训练中</p>
+</li>
+<li>
+<p>是前面两个模型的“祖师爷”</p>
+</li>
+<li>
+<p>内测成绩超过GPT-4.5、Claude 3.7、Gemini 2.0 Pro</p>
+</li>
+</ul>
+<p><strong>Llama 4 最新模型下载</strong></p>
+<p>1、Llama  官方下载：【<strong><a href="https://www.llama.com/" rel="nofollow">点击前往</a></strong>】</p>
+<p>2、Hugging face 下载：【<strong><a href="https://huggingface.co/meta-llama" rel="nofollow">点击前往</a></strong>】</p>
+<p><strong>Llama 4 两大模型在线免费使用</strong></p>
+<p>1、Hugging face 提供</p>
+<p>Llama-4-Maverick 【<a href="https://huggingface.co/spaces/openfree/Llama-4-Maverick-17B-Research" rel="nofollow">点击前往</a>】、Llama-4-Scout 【<a href="https://huggingface.co/spaces/openfree/Llama-4-Scout-17B-Research" rel="nofollow">点击前往</a>】</p>
+<p>注意：Hugging face 在线提供的免费试用版，暂不支持图片识别！ 所以我们可以使用下方提供的平台</p>
+<p>2、Together 【<a href="https://api.together.ai/playground/v2/chat/meta-llama/Llama-4-Scout-17B-16E-Instruct" rel="nofollow">点击前往</a>】</p>
+<p>注册会送免费使用额度，可以直接免费试用Llama 4最新的两大模型Llama-4-Scout 和Llama-4-Maverick ，支持图片识别，可以很好的测试最新的视觉模型性能！</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9c08b745f966a9a21c3f14c327fce13104a5b52144707779bd663064b58157aa/68747470733a2f2f7777772e66726565646964692e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30342f6439346236343064316232303235303430373138333135302e77656270"><img src="https://camo.githubusercontent.com/9c08b745f966a9a21c3f14c327fce13104a5b52144707779bd663064b58157aa/68747470733a2f2f7777772e66726565646964692e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30342f6439346236343064316232303235303430373138333135302e77656270" alt="" data-canonical-src="https://www.freedidi.com/wp-content/uploads/2025/04/d94b640d1b20250407183150.webp" style="max-width: 100%;"></a></p>
+<p>视频中演示的打地鼠代码（优化版），把下方的代码贴到 <a href="https://editor.p5js.org" rel="nofollow">https://editor.p5js.org</a> 就可以在线运行使用！</p>
+<pre class="notranslate"><code class="notranslate">// 可爱风格打地鼠游戏
+
+let holes = []; // 地洞数组
+let moles = []; // 地鼠数组
+let score = 0; // 得分
+let gameTime = 60; // 游戏时间(秒)
+let timer; // 计时器
+let gameOver = false; // 游戏结束标志
+let bgColor; // 背景颜色
+let hammerAngle = 0; // 锤子角度
+let hammerSize = 60; // 锤子大小
+let hitEffect = false; // 打击效果
+let hitTimer = 0; // 打击效果计时
+let startScreen = true; // 开始画面
+let font; // 游戏字体
+
+function preload() {
+  // 这里可以预加载自定义字体
+  // font = loadFont('assets/cute_font.ttf');
+}
+
+function setup() {
+  createCanvas(800, 600);
+  colorMode(HSB, 360, 100, 100, 1);
+  bgColor = color(200, 30, 95); // 浅蓝色背景
+  textAlign(CENTER, CENTER);
+  
+  // 初始化地洞 (3x3网格)
+  for (let i = 0; i &lt; 9; i++) {
+    let x = 150 + (i % 3) * 200;
+    let y = 150 + floor(i / 3) * 180;
+    holes.push(new Hole(x, y, 100));
+  }
+  
+  // 初始化地鼠
+  for (let i = 0; i &lt; 9; i++) {
+    moles.push(new Mole(holes[i]));
+  }
+  
+  // 设置计时器
+  timer = gameTime;
+}
+
+function draw() {
+  background(bgColor);
+  
+  if (startScreen) {
+    drawStartScreen();
+    return;
+  }
+  
+  if (gameOver) {
+    drawGameOver();
+    return;
+  }
+  
+  // 绘制草地
+  drawGrass();
+  
+  // 更新和显示地洞
+  for (let hole of holes) {
+    hole.display();
+  }
+  
+  // 更新和显示地鼠
+  for (let mole of moles) {
+    mole.update();
+    mole.display();
+  }
+  
+  // 绘制锤子
+  drawHammer();
+  
+  // 绘制打击效果
+  if (hitEffect) {
+    drawHitEffect();
+    hitTimer--;
+    if (hitTimer &lt;= 0) {
+      hitEffect = false;
+    }
+  }
+  
+  // 绘制UI
+  drawUI();
+  
+  // 游戏逻辑更新
+  updateGame();
+}
+
+function mousePressed() {
+  if (startScreen) {
+    startScreen = false;
+    // 开始游戏计时
+    setInterval(countDown, 1000);
+    return;
+  }
+  
+  if (gameOver) {
+    resetGame();
+    return;
+  }
+  
+  // 锤击动画
+  hammerAngle = -PI/4;
+  
+  // 检查是否击中地鼠
+  for (let mole of moles) {
+    if (mole.isUp &amp;&amp; dist(mouseX, mouseY, mole.x, mole.y - mole.riseHeight) &lt; mole.size/2) {
+      mole.hit();
+      score += 10;
+      hitEffect = true;
+      hitTimer = 10;
+    }
+  }
+}
+
+function mouseReleased() {
+  // 锤子恢复原位
+  hammerAngle = 0;
+}
+
+function drawStartScreen() {
+  // 可爱标题
+  fill(350, 80, 80);
+  textSize(64);
+  text("打地鼠游戏", width/2, height/3);
+  
+  // 开始按钮
+  fill(120, 80, 90);
+  noStroke();
+  ellipse(width/2, height/2, 200, 80);
+  fill(255);
+  textSize(32);
+  text("开始游戏", width/2, height/2);
+  
+  // 说明文字
+  fill(0);
+  textSize(20);
+  text("点击出现的地鼠获得分数", width/2, height*2/3);
+  text(`游戏时间: ${gameTime}秒`, width/2, height*2/3 + 40);
+}
+
+function drawGameOver() {
+  // 半透明遮罩
+  fill(0, 0, 0, 0.7);
+  rect(0, 0, width, height);
+  
+  // 游戏结束文字
+  fill(0, 80, 100);
+  textSize(64);
+  text("游戏结束!", width/2, height/3);
+  
+  // 得分显示
+  fill(255);
+  textSize(48);
+  text(`得分: ${score}`, width/2, height/2);
+  
+  // 重新开始按钮
+  fill(120, 80, 90);
+  noStroke();
+  ellipse(width/2, height*2/3, 200, 80);
+  fill(255);
+  textSize(32);
+  text("再玩一次", width/2, height*2/3);
+}
+
+function drawGrass() {
+  // 绘制底部草地
+  noStroke();
+  fill(120, 60, 80);
+  beginShape();
+  vertex(0, height);
+  vertex(0, height - 50);
+  for (let x = 0; x &lt;= width; x += 20) {
+    let y = height - 50 + sin(x * 0.05 + frameCount * 0.1) * 15;
+    vertex(x, y);
+  }
+  vertex(width, height - 50);
+  vertex(width, height);
+  endShape(CLOSE);
+}
+
+function drawHammer() {
+  push();
+  translate(mouseX, mouseY);
+  rotate(hammerAngle);
+  
+  // 锤柄
+  stroke(40, 40, 40);
+  strokeWeight(8);
+  line(0, 0, -hammerSize, hammerSize);
+  
+  // 锤头
+  noStroke();
+  fill(200, 40, 40);
+  ellipse(-hammerSize - 10, hammerSize + 10, hammerSize/2, hammerSize/2);
+  
+  pop();
+}
+
+function drawHitEffect() {
+  push();
+  translate(mouseX, mouseY);
+  
+  // 爆炸星星效果
+  noStroke();
+  fill(60, 100, 100, 0.8);
+  for (let i = 0; i &lt; 8; i++) {
+    push();
+    rotate(i * PI/4 + frameCount * 0.2);
+    triangle(0, 0, 30, 5, 30, -5);
+    pop();
+  }
+  
+  // 文字效果
+  fill(0, 100, 100);
+  textSize(24);
+  text("+10", 0, -40);
+  
+  pop();
+}
+
+function drawUI() {
+  // 得分显示
+  fill(0);
+  textSize(32);
+  text(`得分: ${score}`, 150, 50);
+  
+  // 时间显示
+  text(`时间: ${timer}秒`, width - 150, 50);
+}
+
+function updateGame() {
+  // 随机让地鼠出现
+  if (frameCount % 30 === 0 &amp;&amp; random() &lt; 0.2) {
+    let inactiveMoles = moles.filter(m =&gt; !m.isUp &amp;&amp; !m.isHit);
+    if (inactiveMoles.length &gt; 0) {
+      let randomMole = random(inactiveMoles);
+      randomMole.popUp();
+    }
+  }
+}
+
+function countDown() {
+  if (!gameOver) {
+    timer--;
+    if (timer &lt;= 0) {
+      gameOver = true;
+    }
+  }
+}
+
+function resetGame() {
+  score = 0;
+  timer = gameTime;
+  gameOver = false;
+  for (let mole of moles) {
+    mole.reset();
+  }
+}
+
+// 地洞类
+class Hole {
+  constructor(x, y, size) {
+    this.x = x;
+    this.y = y;
+    this.size = size;
+    this.color = color(30, 60, 50); // 深棕色
+  }
+  
+  display() {
+    // 地洞阴影
+    noStroke();
+    fill(0, 0, 0, 0.2);
+    ellipse(this.x + 5, this.y + 5, this.size, this.size/2);
+    
+    // 地洞主体
+    fill(this.color);
+    ellipse(this.x, this.y, this.size, this.size/2);
+    
+    // 地洞内部
+    fill(0, 0, 30);
+    ellipse(this.x, this.y + 5, this.size * 0.8, this.size/3);
+  }
+}
+
+// 地鼠类
+class Mole {
+  constructor(hole) {
+    this.hole = hole;
+    this.x = hole.x;
+    this.y = hole.y;
+    this.size = hole.size * 0.7;
+    this.isUp = false;
+    this.isHit = false;
+    this.riseHeight = 0;
+    this.maxRise = this.size * 1.5;
+    this.speed = random(2, 4);
+    this.color = color(random(20, 40), random(70, 90), random(70, 90));
+    this.faceColor = color(0, 0, 100);
+    this.blushColor = color(0, 80, 90);
+    this.eyeSize = this.size * 0.15;
+    this.animationTimer = 0;
+  }
+  
+  update() {
+    if (this.isUp &amp;&amp; !this.isHit) {
+      // 地鼠上升动画
+      this.riseHeight = min(this.riseHeight + this.speed, this.maxRise);
+      
+      // 随机眨眼
+      if (frameCount % 120 === 0 &amp;&amp; random() &lt; 0.3) {
+        this.animationTimer = 5;
+      }
+    } else if (this.isHit) {
+      // 被打中后下降
+      this.riseHeight = max(this.riseHeight - this.speed * 2, 0);
+      if (this.riseHeight &lt;= 0) {
+        this.isUp = false;
+        this.isHit = false;
+      }
+    }
+  }
+  
+  display() {
+    if (this.isUp) {
+      push();
+      translate(0, -this.riseHeight);
+      
+      // 地鼠身体
+      noStroke();
+      fill(this.color);
+      ellipse(this.x, this.y, this.size, this.size);
+      
+      // 脸颊红晕
+      if (!this.isHit) {
+        fill(this.blushColor);
+        ellipse(this.x - this.size * 0.25, this.y + this.size * 0.1, this.size * 0.2, this.size * 0.1);
+        ellipse(this.x + this.size * 0.25, this.y + this.size * 0.1, this.size * 0.2, this.size * 0.1);
+      }
+      
+      // 脸部
+      fill(this.faceColor);
+      ellipse(this.x, this.y - this.size * 0.1, this.size * 0.7, this.size * 0.7);
+      
+      // 眼睛
+      fill(0);
+      if (this.animationTimer &gt; 0) {
+        // 眨眼动画
+        rect(this.x - this.size * 0.2, this.y - this.size * 0.15, this.eyeSize * 1.5, this.eyeSize * 0.3);
+        rect(this.x + this.size * 0.2, this.y - this.size * 0.15, this.eyeSize * 1.5, this.eyeSize * 0.3);
+        this.animationTimer--;
+      } else {
+        ellipse(this.x - this.size * 0.2, this.y - this.size * 0.15, this.eyeSize);
+        ellipse(this.x + this.size * 0.2, this.y - this.size * 0.15, this.eyeSize);
+      }
+      
+      // 鼻子
+      fill(350, 80, 80);
+      ellipse(this.x, this.y - this.size * 0.05, this.eyeSize * 0.7);
+      
+      // 嘴巴
+      noFill();
+      stroke(0);
+      strokeWeight(2);
+      if (this.isHit) {
+        // 被打中时的表情
+        arc(this.x, this.y + this.size * 0.1, this.size * 0.3, this.size * 0.2, PI, TWO_PI);
+      } else {
+        // 开心表情
+        arc(this.x, this.y + this.size * 0.1, this.size * 0.3, this.size * 0.2, 0, PI);
+      }
+      
+      pop();
+    }
+  }
+  
+  popUp() {
+    this.isUp = true;
+    this.isHit = false;
+    this.riseHeight = 0;
+    this.speed = random(2, 4);
+    
+    // 随机决定多久后会下去
+    setTimeout(() =&gt; {
+      if (this.isUp &amp;&amp; !this.isHit) {
+        this.isHit = true; // 标记为被打中状态(即使没被打中也用这个状态来下降)
+      }
+    }, random(1000, 3000));
+  }
+  
+  hit() {
+    this.isHit = true;
+  }
+  
+  reset() {
+    this.isUp = false;
+    this.isHit = false;
+    this.riseHeight = 0;
+  }
+}
+</code></pre></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://SamikoGTS.github.io">秋名山吃豆腐のblog</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","SamikoGTS/SamikoGTS.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+
+
+</html>
