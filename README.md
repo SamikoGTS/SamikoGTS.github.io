@@ -1,4 +1,5 @@
-# SamikoGTS'blog :link: https://SamikoGTS.github.io 
+# SamikoGTS Blog
+# Link: https://SamikoGTS.github.io 
 ### :page_facing_up: [37](https://SamikoGTS.github.io/tag.html) 
 ### :speech_balloon: 0 
 ### :hibiscus: 80462 
